@@ -8,9 +8,9 @@ The goal is to transcribe a monophonic music audio signal into symbolic music no
 
 - Displaying the **time-domain** waveform and **spectrogram (STFT)** of the input audio.
 - Detecting the **onset and offset times** of each musical note.
-- Estimating the corresponding **MIDI note number**. (
+- Estimating the corresponding **MIDI note number**. 
 
-  ```
+(  ```
   MIDI_number = 69 + 12 * log2(freq / 440)
   ```
 

@@ -1,5 +1,5 @@
 % Read the Audio File
-[audio, fs] = audioread("C:\Users\hsnct\Downloads\Yeni klasör (6)\audio-samples (2)\audio-samples\god_father.wav");
+[audio, fs] = audioread("C:\Users\hsnct\Downloads\Yeni klasör (3)\430\ee430\part2\audio-samples (2)\audio-samples\god_father.wav");
 audio = audio(:,1); % Ensure mono-channel
 time = (0:length(audio)-1)/fs;
 
@@ -85,7 +85,7 @@ hold off;
 ylim([40 105]);
 notes
 
-ground_truth = readtable("C:\Users\hsnct\Downloads\Yeni klasör (6)\groud-truth-midi\groud-truth-midi\god_father.csv");
+ground_truth = readtable("C:\Users\hsnct\Downloads\Yeni klasör (3)\430\ee430\part2\groud-truth-midi\groud-truth-midi\god_father.csv");
 
 gt_start_times = ground_truth.Var1;
 gt_end_times = ground_truth.Var2;

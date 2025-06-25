@@ -8,9 +8,15 @@ The goal is to transcribe a monophonic music audio signal into symbolic music no
 
 - Displaying the **time-domain** waveform and **spectrogram (STFT)** of the input audio.
 - Detecting the **onset and offset times** of each musical note.
-- Estimating the corresponding **MIDI note number**. ($$
-\text{MIDI}_\text{number} = 69 + 12 \cdot \log_2\left(\frac{f}{440}\right)
-$$)
+- Estimating the corresponding **MIDI note number**. (
+
+  ```
+  MIDI_number = 69 + 12 * log2(freq / 440)
+  ```
+
+  where `freq` is the detected frequency in Hz, and 440 Hz corresponds to the A4 note.)
+
+- Groups temporal note segments based on continuity.
 - Visualizing both the detected and the ground-truth MIDI notes.
 - Saving the output as a `.csv` file.
 
